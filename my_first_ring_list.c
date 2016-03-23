@@ -10,7 +10,7 @@ void my_lstadd_back(t_stack *alst, int new_val)
 
 	new->val = new_val;
 
-	new->prev = *alst;
+	new->prev = alst;
 	new->next = alst->next;
 
 	alst->next->prev = new;
